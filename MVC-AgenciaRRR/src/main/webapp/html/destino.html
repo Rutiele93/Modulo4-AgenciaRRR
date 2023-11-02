@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="primary">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Framework Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<!-- Biblioteca JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+
+	<!-- CSS Externo -->
+	<link rel="stylesheet" href="../css/destino.css">
+
+	<!-- Fivecon -->
+	<link rel="shortcut icon" href="../img/logo-age.png" type="image/x-icon" />
+
+	<title> Agencia R.R.R | Destino </title>
+</head>
+<body class="container-fluid bd-navbar">
+	<!-- Navbar -->
+	<header class="container-fluid navbar navbar-expand-lg bd-navbar">
+		<nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+			<!-- Logo navbar -->
+			<a class="navbar-brand mx-auto" href="index.html">
+				<img class="d-block d-none d-lg-flex" id="navbarLogo" src="../img/logo-age.png" alt="agencia">
+			</a>
+			<!-- Botão mobile -->
+			<div class="d-flex">
+				<button class="navbar-toggler border-0 d-lg-none order-3" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+					<img id="togglerLogo" src="../img/logo-age.png" fill="currentColor">
+				</button>
+			</div>
+			<!-- Menu mobile -->
+			<div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+				aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true" aria-modal="true">
+				<!-- Cabeçalho do menu -->
+				<div class="offcanvas-header px-4 pb-0">
+					<h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel"></h5>
+					<button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"
+						aria-label="Close" data-bs-target="#bdNavbar"></button>
+				</div>
+				<!-- Opções do menu -->
+				<div class="offcanvas-body p-5 pt-0 p-lg-0">
+					<hr class="d-lg-none text-white-50">
+					<!-- Primeira parte da navbar -->
+					<ul class="navbar-nav flex-row flex-wrap bd-navbar-nav ms-md-auto">
+						<!-- Home -->
+						<li class="nav-item col-6 col-lg-auto">
+							<a class="nav-link" aria-current="true" href="../index.html" style="padding-right:10px;">
+								<img src="../img/home.png" width="30px">Home</a>
+						</li>
+						<!-- Destinos -->
+						<li class="nav-item col-6 col-lg-auto">
+							<a class="nav-link" href="./destino.html" style="padding-right:10px;">
+								<img src="../img/destino.png" width="30px">Destinos</a>
+						</li>
+						<!-- Cadastro Destino-->
+						<li class="nav-item col-6 col-lg-auto">
+							<a class="nav-link" href="./cadastroDestino.html" style="padding-right:10px;">
+								<img src="../img/cadastro-destino.png" width="30px">Cadastro Destino</a>
+						</li>
+						<!-- Promoção -->
+						<li class="nav-item col-6 col-lg-auto">
+							<a class="nav-link" href="./promocao.html" style="padding-right:10px;">
+								<img src="../img/promocao.png" width="30px">Promoções<a>
+						</li>
+						<!-- Cadastro -->
+						<li class="nav-item col-6 col-lg-auto">
+							<a class="nav-link" href="./cadastre.html" style="padding-right:10px;">
+								<img src="../img/usuario.png" width="30px">Cadastro</a>
+						</li>
+					</ul>
+					<hr class="d-lg-none text-white-50">
+					<!-- Segunda parte da navbar -->
+					<ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+						<li class="nav-item col-6 col-lg-auto"><!-- instagran -->
+							<a class="nav-link" href="https://www.instagram.com/" target="_blank" rel="noopener">
+							<img src="../img/insta.png" width="40px" height="40">
+							</a>
+						</li>
+						<li class="nav-item col-6 col-lg-auto"><!-- Linkedin -->
+							<a class="nav-link" href="https://www.linkedin.com/in/squad037/" target="_blank"rel="noopener">
+								<img src="../img/linkedi.png" width="40px" height="40">
+							</a>
+						</li>
+						<li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+							<div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+							<hr class="d-lg-none my-2 text-white-50">
+						</li>
+						<div class="nav-item col-12 col-lg-auto"><!-- Botões de Login -->
+							<a class="btn btn-primary" role="button" href="../views/login.jsp">Entrar</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- CORPO -->
+	<div class="container-fluid bd-navbar">
+
+		<section class="py-2 ml-0 mr-0">
+			<div class="container-fluid px-4 px-lg-5 my-2 div-junta">
+				<div class="text-center text-white">
+					<h1 class="display-4 fw-bolder">Passagens Áerea</h1>
+					<p class="lead fw-normal opacity-75">Destinos Nascionais</p>
+				</div>
+			</div>
+			<div class="container px-4 px-lg-5 mt-5 my-0 div-junta">
+				<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+					<div class="col mb-12 aumentar-div">
+						<div class="card h-100">
+							<!-- Product image-->
+							<img class="card-img-top" src="../img/amazonas.png" alt="amazonas.img" />
+							<!-- Product details-->
+							<div class="card-body p-4">
+								<div class="text-center">
+									<!-- Product name-->
+									<h5 class="fw-bolder">Amazonas</h5>
+									<!-- Product price-->
+									R$ 940,00 - R$ 800,00
+								</div>
+							</div>
+							<!-- Product actions-->
+							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto"
+										href="../criar-reserva">Reserva Aqui!</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-12 aumentar-div">
+						<div class="card h-100">
+							<!-- Sale badge-->
+							<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+								Sale</div>
+							<!-- Product image-->
+							<img class="card-img-top" src="../img/jericoacoara.png" alt="jeri.img" />
+							<!-- Product details-->
+							<div class="card-body p-4">
+								<div class="text-center">
+									<!-- Product name-->
+									<h5 class="fw-bolder">jericoacoara</h5>
+									<!-- Product reviews-->
+									<div class="d-flex justify-content-center small text-warning mb-2">
+										<div class="bi-star-fill"></div>
+										<div class="bi-star-fill"></div>
+										<div class="bi-star-fill"></div>
+										<div class="bi-star-fill"></div>
+										<div class="bi-star-fill"></div>
+									</div>
+									<!-- Product price-->
+									<span class="text-muted text-decoration-line-through">R$ 1.020,00</span>
+									R$ 718,00
+								</div>
+							</div>
+							<!-- Product actions-->
+							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto"
+										href="../criar-reserva">Reserva Aqui!</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-12 aumentar-div">
+						<div class="card h-100">
+							<!-- Sale badge-->
+							<div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+								Sale</div>
+							<!-- Product image-->
+							<img class="card-img-top" src="../img/pernanbuco.png" alt="pernanbuco.img" />
+							<!-- Product details-->
+							<div class="card-body p-4">
+								<div class="text-center">
+									<!-- Product name-->
+									<h5 class="fw-bolder">Pernambuco</h5>
+									<!-- Product price-->
+									<span class="text-muted text-decoration-line-through">R$ 780,00</span>
+									R$ 625,00
+								</div>
+							</div>
+							<!-- Product actions-->
+							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto"
+										href="../criar-reserva">Reserva Aqui!</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-12 aumentar-div">
+						<div class="card h-100">
+							<!-- Product image-->
+							<img class="card-img-top" src="../img/gramado.png" alt="gramado.img" />
+							<!-- Product details-->
+							<div class="card-body p-4">
+								<div class="text-center">
+									<!-- Product name-->
+									<h5 class="fw-bolder">Gramado</h5>
+									<!-- Product reviews-->
+									<div class="d-flex justify-content-center small text-warning mb-2">
+										<div class="bi-star-fill"></div>
+										<div class="bi-star-fill"></div>
+										<div class="bi-star-fill"></div>
+										<div class="bi-star-fill"></div>
+										<div class="bi-star-fill"></div>
+									</div>
+									<!-- Product price-->
+									R$ 600,00
+								</div>
+							</div>
+							<!-- Product actions-->
+							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+								<div class="text-center"><a class="btn btn-outline-dark mt-auto"
+										href="../criar-reserva">Reserva Aqui!</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Pacotes internacionais-->
+			<section class="py-2">
+				<div class="container px-4 px-lg-5 my-2 div-junta">
+					<div class="text-center text-white">
+						<h1 class="display-4 fw-bolder">Passagens Áerea</h1>
+						<p class="lead fw-normal opacity-75">Destinos Internacionais</p>
+					</div>
+				</div>
+			</section>
+			<section class="py-5">
+				<div class="container px-4 px-lg-5 mt-5 my-0 div-junta">
+					<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+						<div class="col mb-12 aumentar-div">
+							<div class="card h-100">
+								<!-- Sale badge-->
+								<div class="badge bg-dark text-white position-absolute"
+									style="top: 0.5rem; right: 0.5rem">Sale</div>
+								<!-- Product image-->
+								<img class="card-img-top" src="../img/africa.png" alt="africa.img" />
+								<!-- Product details-->
+								<div class="card-body p-4">
+									<div class="text-center">
+										<!-- Product name-->
+										<h5 class="fw-bolder">África</h5>
+										<!-- Product price-->
+										<span class="text-muted text-decoration-line-through">R$ 2.500,00</span>
+										R$2.000,00
+									</div>
+									<div>
+										<h6 class="card-text">Passagem Aérea</h6>
+										<p class="card-text"><img src="../img/aviao.png" id="imgAviao" width="30px"
+												height="25px">
+											23 de maio 2024 - 30 de maio 2024</p>
+									</div>
+								</div>
+								<!-- Product actions-->
+								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+									<div class="text-center"><a class="btn btn-outline-dark mt-auto"
+											href="../criar-reserva">Reserva Aqui!</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-12 aumentar-div">
+							<div class="card h-100">
+								<!-- Product image-->
+								<img class="card-img-top" src="../img/franca.png" alt="frança.img" />
+								<!-- Product details-->
+								<div class="card-body p-4">
+									<div class="text-center">
+										<!-- Product name-->
+										<h5 class="fw-bolder">França</h5>
+										<!-- Product price-->
+										R$ 3.500,00
+									</div>
+									<div>
+										<h6 class="card-text text-center text-muted">Passagem Aérea</h6>
+										<p class="card-text text-center"><img src="./img/aviao.png" id="imgAviao"
+												width="30px" height="25px">
+											20 de dez 2024 - 27 de dez 2024</p>
+									</div>
+								</div>
+								<!-- Product actions-->
+								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+									<div class="text-center"><a class="btn btn-outline-dark mt-auto"
+											href="../criar-reserva">Reserva Aqui!</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-5 aumentar-div">
+							<div class="card h-100">
+								<!-- Sale badge-->
+								<div class="badge bg-dark text-white position-absolute"
+									style="top: 0.5rem; right: 0.5rem">Sale</div>
+								<!-- Product image-->
+								<img class="card-img-top" src="../img/japao.png" alt="japao.img" />
+								<!-- Product details-->
+								<div class="card-body p-4">
+									<div class="text-center">
+										<!-- Product name-->
+										<h5 class="fw-bolder">Japão</h5>
+										<!-- Product reviews-->
+										<div class="d-flex justify-content-center small text-warning mb-2">
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+										</div>
+										<!-- Product price-->
+										<span class="text-muted text-decoration-line-through">R$ 4.278,00</span>
+										R$ 4.000,00
+									</div>
+									<div>
+										<h6 class="card-text">Passagem Aérea</h6>
+										<p class="card-text"><img src="../img/aviao.png" id="imgAviao" width="30px"
+												height="25px">
+											15 de jan 2024 - 27 de jan 2024</p>
+									</div>
+								</div>
+								<!-- Product actions-->
+								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+									<div class="text-center">
+										<a class="btn btn-outline-dark mt-auto"
+											href="../criar-reserva">Reserva Aqui!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col mb-12 aumentar-div">
+							<div class="card h-100">
+								<!-- Product image-->
+								<img class="card-img-top" src="../img/londres.png" alt="londres.img" />
+								<!-- Product details-->
+								<div class="card-body p-4">
+									<div class="text-center">
+										<!-- Product name-->
+										<h5 class="fw-bolder">Londres</h5>
+										<!-- Product reviews-->
+										<div class="d-flex justify-content-center small text-warning mb-2">
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+											<div class="bi-star-fill"></div>
+										</div>
+										<!-- Product price-->
+										R$ 5.000,00
+									</div>
+									<div>
+										<h6 class="card-text">Passagem Aérea</h6>
+										<p class="card-text"><img src="../img/aviao.png" id="imgAviao" width="30px"
+												height="25px">
+											20 de mar 2024 - 27 de mar 2024</p>
+									</div>
+								</div>
+								<!-- Product actions-->
+								<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+									<div class="text-center">
+										<a class="btn btn-outline-dark mt-auto" href="../criar-reserva">Reserva
+											Aqui!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- RODAPÉ -->
+			<div class="container-fluid bd-navbar">
+			<footer class="py-6 my-4">
+				<ul class="nav justify-content-center border-bottom navbar navbar-expand-lg">
+					<li class="nav-item">
+						<a href="../index.html" class="nav-link px-2 text-body-color">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="./loja.html" target="_blank"
+							style="padding-left: 50px; padding-right: 50px;">
+							<img src="../img/loja.png" width="30px"> Encontre uma loja
+						</a>
+					</li>
+					<li class="nav-item">
+						<span class="nav-link active" style="padding-left: 50px; padding-right: 50px;">
+							<img src="../img/tel.png" width="30px"> Central de atendimento: (xx) xxxxx-xxxx | Televendas:(xx) xxxx-xxxx
+						</span>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="./ajuda.html" style="padding-left: 50px;">
+							<img src="../img/ajuda.png" width="30px"> Precisa de ajuda?
+						</a>
+					</li>
+				</ul>
+				<p class="text-center">© Copyright 2023 Todos os direitos reservados, Agencia R.R.R</p>
+				<p><a href="#" id="float-end">Voltar ao início</a></p>
+			</footer>
+			</div>
+	</div>
+	</main>
+</body>
+
+</html>
